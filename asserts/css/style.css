@@ -1,0 +1,79 @@
+:root{
+    --primary: #111b54;
+    --light: #ffff;
+    --grey: #efefef;
+    --dark: #16191c;
+    --dark-x:#1e2126;
+}
+
+body{
+    font-family:'Mulish', sans-serif;
+    font-weight: 300;
+    
+}
+.over-flow-hidden{ overflow: hidden; }
+.bg-dark{ background-color: var(--dark) !important; }
+.bg-dark-x{ background-color: var(--dark-x) !important; color: white;}
+
+
+#slidebar-container{
+    min-height: 100vh;
+}
+
+#slidebar-container{
+    padding: .875rem 1.25rem;
+}
+
+#slidebar-container .menu{
+    width: 18rem;
+}
+a{
+    text-decoration: none;
+}
+
+.btn-search{
+    right: 5px;
+}
+.avatar{
+    max-width: 35px;
+}
+
+#content{
+    overflow: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+.stat{
+    border-right: 1px solid var(--grey);
+}
+/* Login*/
+
+.logo img{
+    width: 6rem;
+}
+.form-control{
+    min-height: 3.125rem;
+    line-height: initial;
+}
+.img-1{
+    background-image: url('/asserts/img/dell1-min.jpg');
+    background-size: cover;
+    background-position: center;
+    ;
+}
+.img-2{
+    background-image: url('/asserts/img/dell2-min.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+    #slidebar-container{
+        display: none;
+    }
+    .stat{
+        border: 0;
+    }
+}
